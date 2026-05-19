@@ -147,70 +147,63 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Infrastructure Tool",
+    name: "Employee Management System (EMS)",
     description:
-      "An automated configuration tool built with React and Node.js designed to orchestrate platform deployment lifecycles smoothly.",
+      "A robust enterprise administration tool built to streamline workforce organization. Enables real-time tracking of staff directories, role allocations, salary structures, and department performance metrics through an intuitive dashboard layout.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "node.js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "pink-text-gradient",
-      },
+      { name: "mongodb", color: "green-text-gradient" },
+      { name: "express", color: "white-text-gradient" },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "node.js", color: "pink-text-gradient" },
+      { name: "tailwind", color: "orange-text-gradient" },
     ],
     image: macbookpro,
-    source_code_link: "https://github.com/notgarv01",
-    live_website_link: "https://github.com/notgarv01",
+    source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
+    live_website_link: "https://emsmine.vercel.app/",
   },
   {
-    name: "Media/Video Feed",
+    name: "DevOps Deployment Panel",
     description:
-      "A high-performance media platform featuring dark themes, fluid video rendering, and scalable MongoDB schema design.",
+      "A high-performance infrastructure orchestration panel designed to simplify the application deployment lifecycle. Mimics automated hosting workflows similar to Vercel or Railway, allowing streamlined project management and hosting.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "express",
-        color: "green-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "pink-text-gradient",
-      },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "node.js", color: "pink-text-gradient" },
+      { name: "tailwind", color: "orange-text-gradient" },
+      { name: "html5", color: "white-text-gradient" },
+      { name: "css3", color: "green-text-gradient" },
     ],
     image: falverra,
-    source_code_link: "https://github.com/notgarv01",
-    live_website_link: "https://github.com/notgarv01",
+    source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
   },
   {
-    name: "E-Commerce Storefront",
+    name: "Foodie - Video Discovery",
     description:
-      "An editorial minimalist storefront highlighting robust state handling via React APIs and highly optimized local asset rendering.",
+      "A premium, video-first food discovery application built on a unified MERN architecture. Features a fixed, high-contrast dark theme layout with fluid visual reels integrated into interactive partner profiles.",
     tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "node.js",
-        color: "green-text-gradient",
-      },
+      { name: "mongodb", color: "green-text-gradient" },
+      { name: "express", color: "white-text-gradient" },
+      { name: "react", color: "blue-text-gradient" },
+      { name: "node.js", color: "pink-text-gradient" },
+      { name: "tailwind", color: "orange-text-gradient" },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/notgarv01",
-    live_website_link: "https://github.com/notgarv01",
+    source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
+    live_website_link: "https://foodie-2-frontend.vercel.app/",
+  },
+  {
+    name: "Gupta Sales",
+    description:
+      "An editorial heritage e-commerce digital storefront optimized for high-end product collections. Engineered for a minimal premium aesthetic using crisp local asset rendering layouts and clean state tracking.",
+    tags: [
+      { name: "react", color: "blue-text-gradient" },
+      { name: "mongodb", color: "green-text-gradient" },
+      { name: "express", color: "white-text-gradient" },
+      { name: "node.js", color: "pink-text-gradient" },
+      { name: "tailwind", color: "orange-text-gradient" },
+    ],
+    image: macbookpro,
+    source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
+    live_website_link: "https://gupta-sales-frontend.vercel.app/",
   },
 ];
 

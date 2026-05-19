@@ -28,7 +28,7 @@ const ProjectCard = ({
         <div
           className="w-full h-[230px] relative cursor-pointer"
           onClick={() => {
-            window.open(live_website_link, "_blank");
+            window.open(live_website_link || source_code_link, "_blank");
           }}
         >
           <img
