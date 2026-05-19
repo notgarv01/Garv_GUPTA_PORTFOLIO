@@ -8,7 +8,9 @@
       "Bash(git remote *)",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(git commit -m 'Update settings *)"
+      "Bash(git commit -m 'Update settings *)",
+      "Bash(git commit *)",
+      "Bash(git push *)"
     ]
   }
 }
