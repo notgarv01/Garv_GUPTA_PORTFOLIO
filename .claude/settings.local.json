@@ -6,7 +6,9 @@
       "Bash(rm -rf .git)",
       "Bash(git init *)",
       "Bash(git remote *)",
-      "Bash(git add *)"
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)",
+      "Bash(git commit -m 'Update settings *)"
     ]
   }
 }
