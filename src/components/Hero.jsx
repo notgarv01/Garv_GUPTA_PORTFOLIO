@@ -15,11 +15,10 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white `}>
-            Hi, I'm <span className="text-[#915eff]">Swastik</span>
+            Hi, I'm <span className="text-[#915eff]">Garv</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white`}>
-            i develop 3d visuals, user <br className="sm:block hidden" />{" "}
-            interfaces and web applications
+            I'm a Junior Full-Stack Developer at Orielix, engineering modern web applications using the MERN stack with a focus on clean layout architectures and seamless user experiences
           </p>
         </div>
       </div>
