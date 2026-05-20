@@ -1,124 +1,119 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
-import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
-import { slideIn } from "../utils/motion";
-import { SectionWrapper } from "../hoc";
 import emailjs from "@emailjs/browser";
 
-// template_49jw5yq
-// service_9gvq101
-// 3lDtCP31mFt_52s7F
+import { styles } from "../styles";
+import { EarthCanvas } from "./canvas";
+import { SectionWrapper } from "../hoc";
+import { slideIn } from "../utils/motion";
 
 const Contact = () => {
   const formRef = useRef();
-  const [form, setform] = useState({
+  const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
   });
-  const [loading, setloading] = useState(false);
+
+  const [loading, setLoading] = useState(false);
+
   const handlechange = (e) => {
     const { name, value } = e.target;
-    setform({ ...form, [name]: value });
+    setForm({
+      ...form,
+      [name]: value,
+    });
   };
+
   const handlesubmit = (e) => {
     e.preventDefault();
-    setloading(true);
-
-    // template_49jw5yq
-    // service_9gvq101
-    // 3lDtCP31mFt_52s7F
+    setLoading(true);
 
     emailjs
       .send(
-        "service_9gvq101",
-        "template_49jw5yq",
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-
+          to_name: "Garv Gupta",
           from_email: form.email,
-
+          to_email: "garvgupta6778@gmail.com",
           message: form.message,
         },
-        "3lDtCP31mFt_52s7F"
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
-          setloading(false);
-          alert("Thank you. I will get back to you as soon as possible");
-          setform({
+          setLoading(false);
+          alert("Transmission received successfully. Connection established.");
+
+          setForm({
             name: "",
             email: "",
             message: "",
           });
         },
         (error) => {
-          setloading(false);
-          console.log(error);
-          alert("Something went wrong.");
+          setLoading(false);
+          console.error(error);
+          alert("Transmission failed. Please check network routing metrics.");
         }
       );
   };
+
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <p className={`${styles.sectionSubText} text-sm`}>System Inquiries</p>
+        <h2 className={`${styles.sectionHeadText} mt-2 mb-6`}>Get in Touch</h2>
 
-        <form
-          ref={formRef}
-          onSubmit={handlesubmit}
-          className="mt-12 flex flex-col gap-8"
-        >
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
-            <input
-              type="text"
-              name="name"
-              value={form.name}
-              onChange={handlechange}
-              placeholder="what's your name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Email</span>
-            <input
-              type="email"
-              name="email"
-              value={form.email}
-              onChange={handlechange}
-              placeholder="what's your email?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
-          </label>
-          <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
-            <textarea
-              rows={5}
-              type="text"
-              name="message"
-              value={form.message}
-              onChange={handlechange}
-              placeholder="what do you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
-            />
-          </label>
-          <button
-            type="submit"
-            className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
-        </form>
+        {/* Contact Info Block */}
+        <div className="flex flex-col gap-10 font-sans text-base">
+          <div className="flex flex-col gap-2">
+            <span className="text-zinc-500 uppercase font-semibold text-xs tracking-widest">Email Endpoint</span>
+            <span className="text-zinc-200 hover:text-white transition-colors text-base font-medium">
+              garvgupta6778@gmail.com
+            </span>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <span className="text-zinc-500 uppercase font-semibold text-xs tracking-widest">Direct Contact</span>
+            <span className="text-zinc-200 hover:text-white transition-colors text-base font-medium">
+              +91 7014145314
+            </span>
+          </div>
+
+          <div className="flex flex-col gap-2">
+            <span className="text-zinc-500 uppercase font-semibold text-xs tracking-widest">Network Directory</span>
+            <div className="flex gap-x-4 gap-y-2 mt-1 text-md whitespace-nowrap font-medium">
+              <a
+                href="https://github.com/notgarv01"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-zinc-400 hover:text-white transition-colors underline underline-offset-4 decoration-zinc-700 hover:decoration-white"
+              >
+                GitHub / notgarv01
+              </a>
+              <span className="text-zinc-800 hidden sm:inline">|</span>
+              <a
+                href="https://linkedin.com/in/garv-gupta-04b431316"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-zinc-400 hover:text-white transition-colors underline underline-offset-4 decoration-zinc-700 hover:decoration-white"
+              >
+                LinkedIn / garv-gupta-04b431316
+              </a>
+            </div>
+          </div>
+        </div>
       </motion.div>
+
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+        className="xl:flex-1 md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
       </motion.div>
@@ -126,4 +121,5 @@ const Contact = () => {
   );
 };
 
-export default SectionWrapper(Contact, "contact");
+const ContactComponent = () => <Contact />;
+export default SectionWrapper(ContactComponent, "contact");

@@ -53,7 +53,7 @@ const About = () => {
       >
         Hi, I’m Garv — a passionate Junior Full-Stack Developer at Orielix with hands-on experience in building modern, responsive web applications using the MERN stack. I focus on clean layout architectures, seamless user experiences, and scalable backend solutions.
       </motion.p>
-      <div className="mt-20 flex  flex-wrap gap-10">
+      <div className="mt-20 flex flex-wrap gap-10">
         {services.map((service, index) => (
           <ServiceCard key={index} index={index} {...service} />
         ))}

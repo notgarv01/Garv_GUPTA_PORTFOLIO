@@ -47,19 +47,19 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Frontend Developer",
+    title: "Full-Stack Development",
     icon: web,
   },
   {
-    title: "React Developer",
+    title: "MERN Architecture",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Interface Optimization",
     icon: backend,
   },
   {
-    title: "MERN Stack",
+    title: "Systems Automation",
     icon: creator,
   },
 ];
@@ -111,9 +111,9 @@ const experiences = [
     iconBg: "#09090b",
     date: "April 2025 – Present",
     points: [
-      "Architected and maintained responsive frontend views using React and Tailwind CSS to match precise UI layouts.",
-      "Engineered performant backend APIs and database schemas utilizing Node.js, Express, and MongoDB to support scalable platform functionality.",
-      "Collaborated within cross-functional teams to integrate clean state management and optimize application load performance.",
+      "Architect and maintain high-fidelity user interfaces utilizing React.js and Tailwind CSS, focusing on strict responsive constraints and fluid execution paths.",
+      "Develop and deploy robust backend APIs and document schemas leveraging Node.js, Express, and MongoDB to optimize server-side transaction performance.",
+      "Collaborate in cross-functional lifecycle reviews to streamline system data streams, reduce content layout shifts, and enhance component caching.",
     ],
   },
 ];
@@ -149,13 +149,13 @@ const projects = [
   {
     name: "Employee Management System (EMS)",
     description:
-      "A robust enterprise administration tool built to streamline workforce organization. Enables real-time tracking of staff directories, role allocations, salary structures, and department performance metrics through an intuitive dashboard layout.",
+      "An enterprise workforce management platform engineered to automate corporate data tracking. Facilitates seamless real-time orchestration of personnel directories, structural role hierarchies, salary frameworks, and dynamic administrative metrics.",
     tags: [
-      { name: "mongodb", color: "green-text-gradient" },
-      { name: "express", color: "white-text-gradient" },
-      { name: "react", color: "blue-text-gradient" },
-      { name: "node.js", color: "pink-text-gradient" },
-      { name: "tailwind", color: "orange-text-gradient" },
+      { name: "MongoDB", color: "green-text-gradient" },
+      { name: "Express.js", color: "white-text-gradient" },
+      { name: "React.js", color: "blue-text-gradient" },
+      { name: "Node.js", color: "pink-text-gradient" },
+      { name: "Tailwind CSS", color: "orange-text-gradient" },
     ],
     image: macbookpro,
     source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
@@ -164,42 +164,41 @@ const projects = [
   {
     name: "DevOps Deployment Panel",
     description:
-      "A high-performance infrastructure orchestration panel designed to simplify the application deployment lifecycle. Mimics automated hosting workflows similar to Vercel or Railway, allowing streamlined project management and hosting.",
+      "A minimalist infrastructure management engine built to decouple and simplify cloud resource deployment lifecycles. Emulates automated cloud-hosting workflows to streamline continuous configuration pipelines and local testing structures.",
     tags: [
-      { name: "react", color: "blue-text-gradient" },
-      { name: "node.js", color: "pink-text-gradient" },
-      { name: "tailwind", color: "orange-text-gradient" },
-      { name: "html5", color: "white-text-gradient" },
-      { name: "css3", color: "green-text-gradient" },
+      { name: "React.js", color: "blue-text-gradient" },
+      { name: "Node.js", color: "pink-text-gradient" },
+      { name: "Tailwind CSS", color: "orange-text-gradient" },
+      { name: "HTML5", color: "white-text-gradient" },
+      { name: "CSS3", color: "green-text-gradient" },
     ],
     image: falverra,
     source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
   },
   {
-    name: "Foodie - Video Discovery",
+    name: "Foodie – Video Discovery Network",
     description:
-      "A premium, video-first food discovery application built on a unified MERN architecture. Features a fixed, high-contrast dark theme layout with fluid visual reels integrated into interactive partner profiles.",
+      "A premium, video-first multimedia interface driven by a cohesive full-stack engine. Incorporates a unified high-contrast dark palette, local asset streaming configurations, and liquid visual feeds mapped to partner profile objects.",
     tags: [
-      { name: "mongodb", color: "green-text-gradient" },
-      { name: "express", color: "white-text-gradient" },
-      { name: "react", color: "blue-text-gradient" },
-      { name: "node.js", color: "pink-text-gradient" },
-      { name: "tailwind", color: "orange-text-gradient" },
+      { name: "MongoDB", color: "green-text-gradient" },
+      { name: "Express.js", color: "white-text-gradient" },
+      { name: "React.js", color: "blue-text-gradient" },
+      { name: "Node.js", color: "pink-text-gradient" },
+      { name: "Tailwind CSS", color: "orange-text-gradient" },
     ],
     image: tripguide,
     source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
     live_website_link: "https://foodie-2-frontend.vercel.app/",
   },
   {
-    name: "Gupta Sales",
+    name: "Gupta Sales Storefront",
     description:
-      "An editorial heritage e-commerce digital storefront optimized for high-end product collections. Engineered for a minimal premium aesthetic using crisp local asset rendering layouts and clean state tracking.",
+      "A high-end editorial digital marketplace optimized for luxury heritage lines. Tailored with a premium, low-overhead UI layout utilizing lightweight React component hooks, granular state management, and optimized asset delivery.",
     tags: [
-      { name: "react", color: "blue-text-gradient" },
-      { name: "mongodb", color: "green-text-gradient" },
-      { name: "express", color: "white-text-gradient" },
-      { name: "node.js", color: "pink-text-gradient" },
-      { name: "tailwind", color: "orange-text-gradient" },
+      { name: "React.js", color: "blue-text-gradient" },
+      { name: "Context API", color: "pink-text-gradient" },
+      { name: "MongoDB", color: "green-text-gradient" },
+      { name: "Tailwind CSS", color: "orange-text-gradient" },
     ],
     image: macbookpro,
     source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",

@@ -6,14 +6,20 @@ import CanvasLoader from "../Loader";
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("/desktop_pc/scene.gltf");
+  const normalizedScale = isMobile ? 0.4 : 0.6;
+  const normalizedPosition = isMobile ? [0, -2.0, -1.0] : [0, -3.2, -1.2];
 
   useEffect(() => {
     computer.scene.traverse((child) => {
       if (child.isMesh) {
         child.geometry?.center();
+        child.castShadow = false;
+        child.receiveShadow = false;
       }
     });
-  }, [computer]);
+    computer.scene.scale.set(normalizedScale, normalizedScale, normalizedScale);
+    computer.scene.position.set(...normalizedPosition);
+  }, [computer, normalizedScale, normalizedPosition]);
 
   return (
     <mesh>
@@ -24,20 +30,15 @@ const Computers = ({ isMobile }) => {
         angle={0.12}
         penumbra={1}
         intensity={1}
-        castShadow
-        shadow-mapSize={1024}
       />
-      <Float 
-       speed={2} // 🔁 Float animation speed
-  rotationIntensity={0.2} // 🔁 Slow subtle rotation
-  floatIntensity={1.5} // 🔁 How much it moves up/down
+      <Float
+       speed={2}
+  rotationIntensity={0.2}
+  floatIntensity={1.5}
   floatingRange={[0, 0]}
       >
         <primitive
           object={computer.scene}
-          scale={isMobile ? 0.5 : 0.75}
-          position={isMobile ? [0, -1.6, -1.2] : [0, -2.6, -1.5]}
-          rotation={isMobile ? [0, 0, -0.05] : [-0.01, -0.2, -0.05]}
         />
       </Float>
     </mesh>
@@ -67,15 +68,15 @@ const ComputersCanvas = () => {
 
   return (
     <Canvas
-      frameloop="always"
-      shadows
+      frameloop="demand"
+      dpr={[1, 2]}
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-           enableRotate={true} 
+           enableRotate={true}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />

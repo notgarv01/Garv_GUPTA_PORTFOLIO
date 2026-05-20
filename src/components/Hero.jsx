@@ -15,10 +15,10 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white `}>
-            Hi, I'm <span className="text-[#915eff]">Garv</span>
+            Garv Gupta
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white`}>
-            I'm a Junior Full-Stack Developer at Orielix, engineering modern web applications using the MERN stack with a focus on clean layout architectures and seamless user experiences
+            Junior Full-Stack Developer at <span className="text-[#915eff]">Orielix</span> specializing in engineering highly performant web architectures. Leveraging the complete MERN stack to deliver robust database lifecycles, optimized API routing, and minimal premium user experiences.
           </p>
         </div>
       </div>

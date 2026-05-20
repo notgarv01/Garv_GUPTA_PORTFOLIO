@@ -23,7 +23,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl  min-w-[360px] sm:w-[360px]"
+        className="bg-tertiary p-5 rounded-2xl min-w-[300px] sm:w-[360px]"
       >
         <div
           className="w-full h-[230px] relative cursor-pointer"

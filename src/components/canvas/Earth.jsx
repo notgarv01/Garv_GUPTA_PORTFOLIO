@@ -10,6 +10,8 @@ const Earth = () => {
     earth.scene.traverse((child) => {
       if (child.isMesh) {
         child.geometry?.center();
+        child.castShadow = false;
+        child.receiveShadow = false;
       }
     });
   }, [earth]);
@@ -26,8 +28,8 @@ const Earth = () => {
 const EarthCanvas = () => {
   return (
     <Canvas
-      shadows
       frameloop="demand"
+      dpr={[1, 2]}
       gl={{ preserveDrawingBuffer: true }}
       camera={{ position: [-4, 3, 6], fov: 45,near:0.1, far:200, }}
     >

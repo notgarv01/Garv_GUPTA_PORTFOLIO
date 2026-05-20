@@ -10,7 +10,10 @@
       "Bash(git commit -m ' *)",
       "Bash(git commit -m 'Update settings *)",
       "Bash(git commit *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(npm install *)",
+      "Bash(npx gltf-pipeline *)",
+      "Bash(npm run *)"
     ]
   }
 }
