@@ -174,6 +174,7 @@ const projects = [
     ],
     image: falverra,
     source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
+    live_website_link: "https://devops-panel-frontend.vercel.app/",
   },
   {
     name: "Foodie – Video Discovery Network",
