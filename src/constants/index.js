@@ -162,15 +162,15 @@ const projects = [
     live_website_link: "https://emsmine.vercel.app/",
   },
   {
-    name: "DevOps Deployment Panel",
+    name: "Auto Deploy X",
     description:
-      "A minimalist infrastructure management engine built to decouple and simplify cloud resource deployment lifecycles. Emulates automated cloud-hosting workflows to streamline continuous configuration pipelines and local testing structures.",
+      "An intelligent, zero-config CI/CD deployment engine built exclusively for MERN monorepos. It autonomously audits architectures, generates Vercel serverless bridges on-the-fly, and safely orchestrates edge deployments via isolated shadow branches.",
     tags: [
-      { name: "React.js", color: "blue-text-gradient" },
-      { name: "Node.js", color: "pink-text-gradient" },
-      { name: "Tailwind CSS", color: "orange-text-gradient" },
-      { name: "HTML5", color: "white-text-gradient" },
-      { name: "CSS3", color: "green-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
+      { name: "Express.js", color: "white-text-gradient" },
+      { name: "Vercel API", color: "blue-text-gradient" },
+      { name: "WebSockets", color: "pink-text-gradient" },
+      { name: "React.js", color: "orange-text-gradient" },
     ],
     image: falverra,
     source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
