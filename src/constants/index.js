@@ -205,6 +205,24 @@ const projects = [
     source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
     live_website_link: "https://gupta-sales-frontend.vercel.app/",
   },
+  {
+    name: "MailCraft – Bulk Email Automation Engine",
+    description:
+      "A highly-scalable, production-grade bulk email automation platform designed to send millions of personalized emails without server crashes. Features robust queueing with Redis/BullMQ, failover SMTP routing, real-time analytics dashboard, campaign management with CSV/JSON uploads, and intelligent scheduling. Built with a minimal premium dark aesthetic inspired by developer-centric tools.",
+    tags: [
+      { name: "React.js", color: "blue-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
+      { name: "Express.js", color: "white-text-gradient" },
+      { name: "MongoDB", color: "pink-text-gradient" },
+      { name: "Redis", color: "orange-text-gradient" },
+      { name: "BullMQ", color: "yellow-text-gradient" },
+      { name: "AWS SES", color: "cyan-text-gradient" },
+      { name: "Tailwind CSS", color: "purple-text-gradient" },
+    ],
+    image: macbookpro,
+    source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
+    live_website_link: "https://mail-craft-pied.vercel.app/",
+  },
 ];
 
 export { services, technologies, experiences, testimonials, projects };
