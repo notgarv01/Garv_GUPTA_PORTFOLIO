@@ -52,12 +52,12 @@ const sheryians =
 const freelance =
   "https://ik.imagekit.io/bqzlidc77g/my%20portfolio/company/images.png?updatedAt=1750261804051";
 
-const macbookpro =
-  "https://ik.imagekit.io/bqzlidc77g/my%20portfolio/MacbookPro_TGyn1EY09X.png?updatedAt=1750225807061";
-const falverra =
-  "https://ik.imagekit.io/bqzlidc77g/my%20portfolio/Screenshot%202025-06-21%20015159.png?updatedAt=1750451051537";
-const tripguide =
-  "https://ik.imagekit.io/bqzlidc77g/my%20portfolio/tripguide.png?updatedAt=1749961172334";
+const formforge = "/formforge.png";
+const ems = "/ems.png";
+const autodeployx = "/autodeployx.png";
+const foodie = "/foodie.png";
+const guptasales = "/guptasales.png";
+const mailcraft = "/mailcraft.png";
 
 export {
   logo,
@@ -85,7 +85,11 @@ export {
   shopify,
   freelance,
   sheryians,
-  macbookpro,
-  falverra,
-  tripguide,
+  formforge,
+  ems,
+  autodeployx,
+  foodie,
+  guptasales,
+  mailcraft,
 };
+

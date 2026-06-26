@@ -109,10 +109,43 @@
     to top,
     #ec008c,
     #fc6767
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+/ Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.white-text-gradient {
+  background: #ffffff;
+  background: -webkit-linear-gradient(to top, #b5b5b5, #ffffff);
+  background: linear-gradient(to top, #b5b5b5, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.yellow-text-gradient {
+  background: #ffe259;
+  background: -webkit-linear-gradient(to top, #ffa751, #ffe259);
+  background: linear-gradient(to top, #ffa751, #ffe259);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.purple-text-gradient {
+  background: #da22ff;
+  background: -webkit-linear-gradient(to top, #9733ee, #da22ff);
+  background: linear-gradient(to top, #9733ee, #da22ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cyan-text-gradient {
+  background: #00c6ff;
+  background: -webkit-linear-gradient(to top, #0072ff, #00c6ff);
+  background: linear-gradient(to top, #0072ff, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 
 /* canvas- styles */
 .canvas-loader {

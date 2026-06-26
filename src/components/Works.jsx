@@ -14,6 +14,7 @@ const ProjectCard = ({
   image,
   source_code_link,
   live_website_link,
+  features,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -23,46 +24,68 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl min-w-[300px] sm:w-[360px]"
+        className="bg-tertiary p-5 rounded-2xl min-w-[300px] sm:w-[360px] h-full flex flex-col justify-between"
       >
-        <div
-          className="w-full h-[230px] relative cursor-pointer"
-          onClick={() => {
-            window.open(live_website_link || source_code_link, "_blank");
-          }}
-        >
-          <img
-            src={`${image}${image.includes("?") ? "&" : "?"}tr=f-auto`}
-            alt={name}
-            loading="lazy"
-            className="w-full h-full object-cover rounded-2xl"
-          />
+        <div>
+          <div
+            className="w-full h-[230px] relative cursor-pointer"
+            onClick={() => {
+              window.open(live_website_link || source_code_link, "_blank");
+            }}
+          >
+            <img
+              src={`${image}${image.includes("?") ? "&" : "?"}tr=f-auto`}
+              alt={name}
+              loading="lazy"
+              className="w-full h-full object-cover rounded-2xl"
+            />
 
-          <div className="absolute  inset-0 flex justify-end mt-3 card-img_hover">
-            <div
-              onClick={() => {
-                window.open("https://github.com/notgarv01", "_blank");
-              }}
-              className="black-gradient w-10 h-10 rounded-full flex items-center justify-center cursor-pointer"
-            >
-              <img
-                src={`${github}${github.includes("?") ? "&" : "?"}tr=f-auto`}
-                alt="GitHub Icon"
-                loading="lazy"
-                width="50%"
-                height="50%"
-                className="object-contain w-1/2 h-1/2"
-              />
+            <div className="absolute  inset-0 flex justify-end mt-3 card-img_hover">
+              <div
+                onClick={() => {
+                  window.open("https://github.com/notgarv01", "_blank");
+                }}
+                className="black-gradient w-10 h-10 rounded-full flex items-center justify-center cursor-pointer"
+              >
+                <img
+                  src={`${github}${github.includes("?") ? "&" : "?"}tr=f-auto`}
+                  alt="GitHub Icon"
+                  loading="lazy"
+                  width="50%"
+                  height="50%"
+                  className="object-contain w-1/2 h-1/2"
+                />
+              </div>
             </div>
           </div>
-        </div>
-        <div className="mt-5">
-          <h3 className="text-white font-bold text-[24px]">{name}</h3>
-          <p className="text-secondary mt-4 text-[15px]">{description}</p>
+          <div className="mt-5">
+            <h3 className="text-white font-bold text-[24px]">{name}</h3>
+            <p className="text-secondary mt-4 text-[15px]">{description}</p>
+            {features && (
+              <ul className="mt-4 list-disc list-inside space-y-2 text-secondary text-[14px]">
+                {features.map((feature, idx) => {
+                  const parts = feature.split(":");
+                  if (parts.length > 1) {
+                    return (
+                      <li key={idx} className="leading-relaxed">
+                        <strong className="text-white-100 font-semibold">{parts[0]}:</strong>
+                        {parts.slice(1).join(":")}
+                      </li>
+                    );
+                  }
+                  return (
+                    <li key={idx} className="leading-relaxed">
+                      {feature}
+                    </li>
+                  );
+                })}
+              </ul>
+            )}
+          </div>
         </div>
         <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
-            <p key={tag.name} className={`${tag.color} taxt-[15px]`}>
+            <p key={tag.name} className={`${tag.color} text-[15px]`}>
               #{tag.name}
             </p>
           ))}
