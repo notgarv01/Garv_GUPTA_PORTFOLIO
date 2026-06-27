@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
-import { div } from "framer-motion/client";
 import { SectionWrapper } from "../hoc";
 
 const ServiceCard = ({ index, title, icon }) => {
@@ -49,7 +48,7 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[14px] sm:text-[17px] max-w-3xl sm:leading-[30px] leading-1"
+        className="mt-4 text-secondary text-[14px] sm:text-[17px] max-w-3xl sm:leading-[30px] leading-relaxed"
       >
         Hi, I’m Garv — a passionate Junior Full-Stack Developer at Orielix with hands-on experience in building modern, responsive web applications using the MERN stack. I focus on clean layout architectures, seamless user experiences, and scalable backend solutions.
       </motion.p>

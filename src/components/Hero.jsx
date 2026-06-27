@@ -5,7 +5,7 @@ import { styles } from "../styles";
 
 const Hero = () => {
   return (
-    <section className="relative w-full   h-screen mx-auto">
+    <section className="relative w-full h-screen mx-auto overflow-hidden">
       <div
         className={`${styles.paddingX} inset-0 sm:top-[70px] top-[90px] absolute max-w-7xl mx-auto flex flex-row items-start gap-5`}
       >
@@ -26,7 +26,7 @@ const Hero = () => {
       <div className="absolute sm:bottom-24 bottom-36 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-            <motion.dev
+            <motion.div
               animate={{
                 y: [0, 24, 0],
               }}

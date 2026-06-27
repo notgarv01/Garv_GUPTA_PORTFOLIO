@@ -12,7 +12,6 @@ const Computers = ({ isMobile }) => {
   useEffect(() => {
     computer.scene.traverse((child) => {
       if (child.isMesh) {
-        child.geometry?.center();
         child.castShadow = false;
         child.receiveShadow = false;
       }

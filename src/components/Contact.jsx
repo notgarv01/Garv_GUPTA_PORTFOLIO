@@ -88,7 +88,7 @@ const Contact = () => {
 
           <div className="flex flex-col gap-2">
             <span className="text-zinc-500 uppercase font-semibold text-xs tracking-widest">Network Directory</span>
-            <div className="flex gap-x-4 gap-y-2 mt-1 text-md whitespace-nowrap font-medium">
+            <div className="flex flex-wrap gap-x-4 gap-y-2 mt-1 text-md font-medium">
               <a
                 href="https://github.com/notgarv01"
                 target="_blank"

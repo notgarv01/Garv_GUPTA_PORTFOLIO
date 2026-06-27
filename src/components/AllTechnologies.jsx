@@ -11,17 +11,29 @@ const AllTechnologies = () => {
 
    const navigate = useNavigate();
   return (
-    <div className="min-h-screen bg-primary px-4 sm:px-10 py-20">
+    <div className="min-h-screen bg-primary px-4 sm:px-10 py-20 overflow-x-hidden">
       <motion.div className="w-full text-center mb-12">
         <p className={styles.sectionSubText}>All Skills</p>
         <h2 className={styles.sectionHeadText}>Technologies</h2>
       </motion.div>
 
-      <div className="flex flex-wrap justify-center gap-14">
+      <div className="flex flex-wrap justify-center gap-6 sm:gap-10">
         {technologies.map((tech) => (
-          <div className="sm:w-36 w-28 h-28 sm:h-36 flex flex-col items-center" key={tech.name}>
-            <img src={tech.icon} alt={tech.name} />
-            <h1>{tech.name}</h1>
+          <div
+            className="sm:w-36 w-28 h-36 flex flex-col items-center justify-between bg-tertiary p-4 rounded-2xl border border-white/5 hover:border-[#915eff]/50 transition-all duration-300"
+            key={tech.name}
+          >
+            <div className="w-16 h-16 flex items-center justify-center">
+              <img
+                src={tech.icon}
+                alt={tech.name}
+                className="w-full h-full object-contain"
+                loading="lazy"
+              />
+            </div>
+            <h3 className="text-white text-sm font-medium mt-3 text-center truncate w-full">
+              {tech.name}
+            </h3>
           </div>
         ))}
       </div>

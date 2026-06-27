@@ -105,7 +105,7 @@ const Works = () => {
       <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-3 text-secondary text-[17px] sm:text-[17px] max-w-3xl sm:leading-[30px] leading-1"
+          className="mt-3 text-secondary text-[17px] sm:text-[17px] max-w-3xl sm:leading-[30px] leading-relaxed"
         >
           Here are some of the projects I’ve built using the MERN stack. From frontend interfaces to backend APIs, with live demos and source code provided to showcase my hands-on experience in building scalable and maintainable web applications.
         </motion.p>

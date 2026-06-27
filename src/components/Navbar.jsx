@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-2 z-20 bg-[#050a208e] fixed`}
+      className={`${styles.paddingX} w-full flex items-center py-2 z-20 bg-[#050a208e] fixed top-0 left-0 right-0`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -30,11 +30,11 @@ const Navbar = () => {
             height={64}
           />
           <p className="text-white text-[17px] font-semibold cursor-pointer">
-            <span className="sm:block  font-bold">Garv</span> | Gupta
+            <span className="font-bold">Garv</span> | Gupta
           </p>
         </Link>
 
-        <ul className="list-none hidden text-nowrap sm:flex flex-row gap-10">
+        <ul className="list-none hidden text-nowrap md:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
               key={link.id}
@@ -49,7 +49,7 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile menu icon */}
-        <div className="sm:hidden flex flex-1 justify-end items-center">
+        <div className="md:hidden flex flex-1 justify-end items-center">
           <img
             src={`${(toggle ? close : menu)}${(toggle ? close : menu).includes("?") ? "&" : "?"}tr=f-auto`}
             alt="menu"
@@ -63,7 +63,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`fixed top-0 right-0 h-full w-3/4 sm:w-1/2 bg-[#050816] shadow-lg transition-transform duration-300 z-40 ${
+        className={`fixed top-0 right-0 h-full w-3/4 md:w-1/3 bg-[#050816] shadow-lg transition-transform duration-300 z-40 ${
           toggle ? "translate-x-0" : "translate-x-full"
         }`}
       >
