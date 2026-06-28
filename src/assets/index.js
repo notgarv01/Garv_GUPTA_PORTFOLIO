@@ -58,6 +58,7 @@ const autodeployx = "/autodeployx.png";
 const foodie = "/foodie.png";
 const guptasales = "/guptasales.png";
 const mailcraft = "/mailcraft.png";
+const mockstream = "/mockstream.png";
 
 export {
   logo,
@@ -91,5 +92,6 @@ export {
   foodie,
   guptasales,
   mailcraft,
+  mockstream,
 };
 
