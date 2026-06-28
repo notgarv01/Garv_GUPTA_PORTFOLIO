@@ -151,21 +151,6 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Employee Management System (EMS)",
-    description:
-      "An enterprise workforce management platform engineered to automate corporate data tracking. Facilitates seamless real-time orchestration of personnel directories, structural role hierarchies, salary frameworks, and dynamic administrative metrics.",
-    tags: [
-      { name: "MongoDB", color: "green-text-gradient" },
-      { name: "Express.js", color: "white-text-gradient" },
-      { name: "React.js", color: "blue-text-gradient" },
-      { name: "Node.js", color: "pink-text-gradient" },
-      { name: "Tailwind CSS", color: "orange-text-gradient" },
-    ],
-    image: ems,
-    source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
-    live_website_link: "https://emsmine.vercel.app/",
-  },
-  {
     name: "Auto Deploy X",
     description:
       "An intelligent, zero-config CI/CD deployment engine built exclusively for MERN monorepos. It autonomously audits architectures, generates Vercel serverless bridges on-the-fly, and safely orchestrates edge deployments via isolated shadow branches.",
@@ -179,6 +164,58 @@ const projects = [
     image: autodeployx,
     source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
     live_website_link: "https://devops-panel-frontend.vercel.app/",
+  },
+  {
+    name: "FormForge – Headless Form Backend",
+    description:
+      "A developer-first headless form backend that decouples frontend submission lifecycles. Automates field capture, invisible honeypot spam protection, and real-time alerts without infrastructure maintenance.",
+    tags: [
+      { name: "Node.js", color: "pink-text-gradient" },
+      { name: "Express.js", color: "white-text-gradient" },
+      { name: "MongoDB", color: "green-text-gradient" },
+      { name: "React.js", color: "blue-text-gradient" },
+      { name: "Tailwind CSS", color: "purple-text-gradient" },
+      { name: "Firebase-Auth", color: "yellow-text-gradient" },
+      { name: "Vercel", color: "blue-text-gradient" },
+      { name: "Render", color: "pink-text-gradient" },
+    ],
+    image: formforge,
+    source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
+    live_website_link: "https://form-forge-umber.vercel.app/",
+  },
+  {
+    name: "MailCraft – Bulk Email Automation Engine",
+    description:
+      "A highly-scalable, production-grade bulk email automation platform designed to send millions of personalized emails without server crashes. Features robust queueing with Redis/BullMQ, failover SMTP routing, real-time analytics dashboard, campaign management with CSV/JSON uploads, and intelligent scheduling. Built with a minimal premium dark aesthetic inspired by developer-centric tools.",
+    tags: [
+      { name: "React.js", color: "blue-text-gradient" },
+      { name: "Node.js", color: "green-text-gradient" },
+      { name: "Express.js", color: "white-text-gradient" },
+      { name: "MongoDB", color: "pink-text-gradient" },
+      { name: "Redis", color: "orange-text-gradient" },
+      { name: "BullMQ", color: "yellow-text-gradient" },
+      { name: "AWS SES", color: "cyan-text-gradient" },
+      { name: "Tailwind CSS", color: "purple-text-gradient" },
+    ],
+    image: mailcraft,
+    source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
+    live_website_link: "https://mail-craft-pied.vercel.app/",
+  },
+  {
+    name: "MockStream – Webhook Pipeline",
+    description:
+      "A real-time webhook inspection pipeline that captures, inspects, and replays HTTP payloads. Features persistent public endpoints, non-blocking ingestion (≤100ms ACK), and instant Redis Pub/Sub WebSocket streaming, backed by PostgreSQL JSONB transactional persistence for one-click request replays.",
+    tags: [
+      { name: "Node.js", color: "pink-text-gradient" },
+      { name: "Fastify", color: "white-text-gradient" },
+      { name: "WebSockets", color: "blue-text-gradient" },
+      { name: "Redis", color: "orange-text-gradient" },
+      { name: "PostgreSQL", color: "green-text-gradient" },
+      { name: "Tailwind CSS", color: "purple-text-gradient" },
+    ],
+    image: mockstream,
+    source_code_link: "https://github.com/notgarv01/MockStream",
+    live_website_link: "https://mock-stream-ruddy.vercel.app/",
   },
   {
     name: "Foodie – Video Discovery Network",
@@ -210,56 +247,19 @@ const projects = [
     live_website_link: "https://gupta-sales-frontend.vercel.app/",
   },
   {
-    name: "MailCraft – Bulk Email Automation Engine",
+    name: "Employee Management System (EMS)",
     description:
-      "A highly-scalable, production-grade bulk email automation platform designed to send millions of personalized emails without server crashes. Features robust queueing with Redis/BullMQ, failover SMTP routing, real-time analytics dashboard, campaign management with CSV/JSON uploads, and intelligent scheduling. Built with a minimal premium dark aesthetic inspired by developer-centric tools.",
+      "An enterprise workforce management platform engineered to automate corporate data tracking. Facilitates seamless real-time orchestration of personnel directories, structural role hierarchies, salary frameworks, and dynamic administrative metrics.",
     tags: [
-      { name: "React.js", color: "blue-text-gradient" },
-      { name: "Node.js", color: "green-text-gradient" },
-      { name: "Express.js", color: "white-text-gradient" },
-      { name: "MongoDB", color: "pink-text-gradient" },
-      { name: "Redis", color: "orange-text-gradient" },
-      { name: "BullMQ", color: "yellow-text-gradient" },
-      { name: "AWS SES", color: "cyan-text-gradient" },
-      { name: "Tailwind CSS", color: "purple-text-gradient" },
-    ],
-    image: mailcraft,
-    source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
-    live_website_link: "https://mail-craft-pied.vercel.app/",
-  },
-  {
-    name: "FormForge – Headless Form Backend",
-    description:
-      "A developer-first headless form backend that decouples frontend submission lifecycles. Automates field capture, invisible honeypot spam protection, and real-time alerts without infrastructure maintenance.",
-    tags: [
-      { name: "Node.js", color: "pink-text-gradient" },
-      { name: "Express.js", color: "white-text-gradient" },
       { name: "MongoDB", color: "green-text-gradient" },
+      { name: "Express.js", color: "white-text-gradient" },
       { name: "React.js", color: "blue-text-gradient" },
-      { name: "Tailwind CSS", color: "purple-text-gradient" },
-      { name: "Firebase-Auth", color: "yellow-text-gradient" },
-      { name: "Vercel", color: "blue-text-gradient" },
-      { name: "Render", color: "pink-text-gradient" },
-    ],
-    image: formforge,
-    source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
-    live_website_link: "https://form-forge-umber.vercel.app/",
-  },
-  {
-    name: "MockStream – Webhook Pipeline",
-    description:
-      "A real-time webhook inspection pipeline that captures, inspects, and replays HTTP payloads. Features persistent public endpoints, non-blocking ingestion (≤100ms ACK), and instant Redis Pub/Sub WebSocket streaming, backed by PostgreSQL JSONB transactional persistence for one-click request replays.",
-    tags: [
       { name: "Node.js", color: "pink-text-gradient" },
-      { name: "Fastify", color: "white-text-gradient" },
-      { name: "WebSockets", color: "blue-text-gradient" },
-      { name: "Redis", color: "orange-text-gradient" },
-      { name: "PostgreSQL", color: "green-text-gradient" },
-      { name: "Tailwind CSS", color: "purple-text-gradient" },
+      { name: "Tailwind CSS", color: "orange-text-gradient" },
     ],
-    image: mockstream,
-    source_code_link: "https://github.com/notgarv01/MockStream",
-    live_website_link: "https://mock-stream-ruddy.vercel.app/",
+    image: ems,
+    source_code_link: "https://github.com/notgarv01/Garv_GUPTA_PORTFOLIO",
+    live_website_link: "https://emsmine.vercel.app/",
   },
 ];
 
